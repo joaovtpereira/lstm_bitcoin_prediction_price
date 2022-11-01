@@ -26,3 +26,12 @@ from itertools import cycle
 import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
+
+# Load our dataset 
+# Note it should be in same dir
+
+
+maindf=pd.read_csv('BTC-USD.csv')
+
+print('Total number of days present in the dataset: ',maindf.shape[0])
+print('Total number of fields present in the dataset: ',maindf.shape[1])
